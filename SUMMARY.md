@@ -2,11 +2,10 @@
 
 * [Introduction](README.md)
 * [client](client/README.md)
-    * AppSandBox
-    * VirtualCore
+    * [VIrtualCore](client/virtualcore.md)
     * PatchManager
     * [Hook](client/hook/README.md)
-    * [Proxy](client/proxy/README.md)
+    * [组件代理](client/proxy/README.md)
         * [Activity代理](client/proxy/stubactivity.md)
         * [ContentProvider代理](client/proxy/stubcontentprovider.md)
         * [ShortCut代理](client/proxy/shortcuthandleactivity.md)
