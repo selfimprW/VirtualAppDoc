@@ -12,7 +12,7 @@
         * [ShortcutHandleActivity](client/proxy/shortcuthandleactivity.md)
     * [Runtime](client/runtime/README.md)
         * [RuntimeEnv](client/runtime/runtimeenv.md)
-        * ServiceEnv
+        * [ServiceEnv](client/runtime/serviceenv.md)
 * [service](service/README.md)
     * AppFileSystem
     * BinderProvider
