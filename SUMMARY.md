@@ -10,7 +10,7 @@
         * [Activity代理](client/proxy/stubactivity.md)
         * [ContentProvider代理](client/proxy/stubcontentprovider.md)
         * [ShortCut代理](client/proxy/shortcuthandleactivity.md)
-        * [Service代理](client/proxy/service代理.md)
+        * [Service代理](client/proxy/serviceproxy.md)
     * [Runtime](client/runtime/README.md)
         * [RuntimeEnv](client/runtime/runtimeenv.md)
         * [ServiceEnv](client/runtime/serviceenv.md)
