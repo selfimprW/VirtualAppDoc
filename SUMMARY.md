@@ -2,20 +2,20 @@
 
 * [Introduction](README.md)
 * [client](client/README.md)
+    * [应用沙箱](client/appsandbox.md)
     * [VIrtualCore](client/virtualcore.md)
-    * PatchManager
     * [Hook](client/hook/README.md)
     * [组件代理](client/proxy/README.md)
         * [Activity代理](client/proxy/stubactivity.md)
         * [ContentProvider代理](client/proxy/stubcontentprovider.md)
         * [ShortCut代理](client/proxy/shortcuthandleactivity.md)
         * [Service代理](client/proxy/serviceproxy.md)
-    * [Runtime](client/runtime/README.md)
+    * [运行环境](client/runtime/README.md)
         * [RuntimeEnv](client/runtime/runtimeenv.md)
         * [ServiceEnv](client/runtime/serviceenv.md)
 * [service](service/README.md)
-    * AppFileSystem
-    * BinderProvider
-    * VAppService
-    * VContentService
+    * [插件文件系统](service/appfilesystem.md)
+    * [BinderProvider](service/binderprovider.md)
+    * [VAppService](service/vappservice.md)
+    * [VContentService](service/vcontentservice.md)
 
