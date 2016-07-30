@@ -7,9 +7,10 @@
     * PatchManager
     * [Hook](client/hook/README.md)
     * [Proxy](client/proxy/README.md)
-        * [快捷方式](client/proxy/stubactivity.md)
-        * [StubContentProvider](client/proxy/stubcontentprovider.md)
-        * [ShortcutHandleActivity](client/proxy/shortcuthandleactivity.md)
+        * [Activity代理](client/proxy/stubactivity.md)
+        * [ContentProvider代理](client/proxy/stubcontentprovider.md)
+        * [ShortCut代理](client/proxy/shortcuthandleactivity.md)
+        * [Service代理](client/proxy/service代理.md)
     * [Runtime](client/runtime/README.md)
         * [RuntimeEnv](client/runtime/runtimeenv.md)
         * [ServiceEnv](client/runtime/serviceenv.md)
