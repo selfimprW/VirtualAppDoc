@@ -9,7 +9,7 @@
     * [Proxy](client/proxy/README.md)
         * [快捷方式](client/proxy/stubactivity.md)
         * [StubContentProvider](client/proxy/stubcontentprovider.md)
-        * ShortcutHandleActivity
+        * [ShortcutHandleActivity](client/proxy/shortcuthandleactivity.md)
     * [Runtime](client/runtime/README.md)
         * [RuntimeEnv](client/runtime/runtimeenv.md)
         * ServiceEnv
