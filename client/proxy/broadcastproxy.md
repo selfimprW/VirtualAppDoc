@@ -43,3 +43,29 @@ if (args[1] instanceof Intent) {
 
 主要是把接受者替换为ProxyIIntentReceiver，这里面的广播响应方法做处理。
 
+代码：
+
+```
+if (args != null && args.length > indexOfIIntentReceiver
+        && IIntentReceiver.class.isInstance(args[indexOfIIntentReceiver])) {
+    final IIntentReceiver old = (IIntentReceiver) args[indexOfIIntentReceiver];
+    //防止重复代理    
+    if(!ProxyIIntentReceiver.class.isInstance(old)) {
+        IBinder token = old.asBinder();
+        IIntentReceiver.Stub proxyIIntentReceiver = mProxyIIntentReceiver.get(token);
+        if (proxyIIntentReceiver == null) {
+            proxyIIntentReceiver = new ProxyIIntentReceiver(old);
+            mProxyIIntentReceiver.put(token, proxyIIntentReceiver);
+        }
+        try {
+            WeakReference WeakReference_mDispatcher = Reflect.on(old).get("mDispatcher");
+            Object mDispatcher = WeakReference_mDispatcher.get();            //设置关系
+            Reflect.on(mDispatcher).set("mIIntentReceiver", proxyIIntentReceiver);
+            args[indexOfIIntentReceiver] = proxyIIntentReceiver;
+        } catch (Throwable e) {
+            e.printStackTrace();        
+        }
+    }
+}
+```
+
