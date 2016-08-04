@@ -2,9 +2,9 @@
 
 * [Introduction](README.md)
 * [client](client/README.md)
-    * [应用沙箱](client/appsandbox.md)
+    * [AppSandBox](client/appsandbox.md)
     * [VIrtualCore](client/virtualcore.md)
-    * [Hook](client/hook/README.md)
+    * [PatchManager](client/hook/README.md)
     * [组件代理](client/proxy/README.md)
         * [Activity代理](client/proxy/stubactivity.md)
         * [ContentProvider代理](client/proxy/stubcontentprovider.md)
