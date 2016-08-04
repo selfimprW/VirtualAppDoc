@@ -10,6 +10,8 @@
         * [ContentProvider代理](client/proxy/stubcontentprovider.md)
         * [ShortCut代理](client/proxy/shortcuthandleactivity.md)
         * [Service代理](client/proxy/serviceproxy.md)
+        * [Broadcast代理与隔离](client/proxy/broadcastproxy.md)
+        * [Notification和AppWidget](client/proxy/notification.md)
     * [运行环境](client/runtime/README.md)
         * [RuntimeEnv](client/runtime/runtimeenv.md)
         * [ServiceEnv](client/runtime/serviceenv.md)
