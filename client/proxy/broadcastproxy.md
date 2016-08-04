@@ -1,7 +1,5 @@
 ## Broadcast代理与隔离
 
-### 1.代理
-
 接收权限：
 
 在Hook\_RegisterReceiver.java， am 的registerReceiver方法，给每一个 Receiver 添加权限。
@@ -30,7 +28,7 @@ if (permissionType == String.class) {
 
 处理广播：
 
-1.添加\/删除快捷方式，替换Intent为代理Intent
+1.添加\/删除快捷方式，替换Intent为代理Intent，同时替换icon资源
 
 ```
 if (args[1] instanceof Intent) {   
@@ -39,5 +37,9 @@ if (args[1] instanceof Intent) {
 }
 ```
 
+2.如果广播是指定接受者的ComponentName。需要处理。
 
+（相当于encode，decode操作在 Hook\_RegisterReceiver 的 registerReceiver 方法）。
+
+主要是把接受者替换为ProxyIIntentReceiver，这里面的广播响应方法做处理。
 
