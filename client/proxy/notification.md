@@ -22,7 +22,9 @@ enqueueNotification，enqueueNotificationWithTag，enqueueNotificationWithTagPri
 
 子view的点击事件处理：pendIntentCompat.setPendIntent\(\)方法。通过在通知栏上面添加一堆NxM的TextView，然后根据原始的子View所占区域，去给TextView添加点击事件。
 
-
+bitmap的绘制：通过RemoteViews.apply\(\)方法返回通知栏的View（这个context必须是插件的），系统通过插件的context去构建一个view，然后把RemoteViews.set\*相关的设置都更新到view上面。然后等到这个view，通过宽高区域measure，layout，绘制成bitmap。（每个rom的通知栏宽高都不一致，目前仅适配原生rom（大多数rom），miui，emui。）
 
 ## AppWidget
+
+绘制，点击事件处理和上面差不多，就是通过AppWidget的id去管理AppWidget的更新。
 
