@@ -6,10 +6,6 @@
 
 通过id构建个View，这个通过Remove
 
-
-
-
-
 如果去替换Notification？
 
 hook通知栏服务的3个添加通知栏方法：
@@ -25,20 +21,6 @@ enqueueNotification，enqueueNotificationWithTag，enqueueNotificationWithTagPri
 绘制过程在RemoteViewsUtils._getInstance_\(\).createViews，我们的代理通知栏采用自定义样式的通知栏（准备了2个，一个是子view的点击事件，另一个是仅有默认点击事件，把差距的通知栏绘制成bitmap，然后设置到我们的代理通知栏的ImageView上面。
 
 子view的点击事件处理：pendIntentCompat.setPendIntent\(\)方法。通过在通知栏上面添加一堆NxM的TextView，然后根据原始的子View所占区域，去给TextView添加点击事件。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
