@@ -41,7 +41,7 @@ if (args[1] instanceof Intent) {
 
 （相当于encode，decode操作在 Hook\_RegisterReceiver 的 registerReceiver 方法）。
 
-主要是把接受者替换为ProxyIIntentReceiver，这里面的广播响应方法做处理。
+主要是把接受者替换为ProxyIIntentReceiver，这里面的广播响应方法做处理。比较关键点就是替换后，设置关联。
 
 代码：
 
